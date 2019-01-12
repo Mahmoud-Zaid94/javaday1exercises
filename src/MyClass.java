@@ -1,4 +1,5 @@
 import java.lang.Math;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class MyClass {
@@ -29,6 +30,17 @@ public class MyClass {
             System.out.println("Game Over!!");
         }
     }
+
+    public void acceptAndReverse(int[] array){
+        int reversedArr[] = new int[5];
+        for(int i=array.length - 1, j = 0; i >= 0; i--, j++){
+            reversedArr[j] = array[i];
+
+        }
+        System.out.println("Reversed Array: " + Arrays.toString(reversedArr));
+
+    }
+
 }
 
 
